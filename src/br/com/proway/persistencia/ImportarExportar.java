@@ -10,6 +10,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -52,6 +53,7 @@ public class ImportarExportar {
             lista = new Gson().fromJson(bufferedReader, listType);
             return lista;
         } catch (java.io.FileNotFoundException e) {
+            new File("json").mkdir();
             return lista;
         }
     }

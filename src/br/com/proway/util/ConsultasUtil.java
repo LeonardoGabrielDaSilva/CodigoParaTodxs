@@ -12,50 +12,50 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.nio.charset.Charset;
+import java.text.Normalizer;
 
 /**
  *
  * @author Leonardo Gabriel
  */
 public class ConsultasUtil {
-    
-    
+
     /**
      * Realiza uma consulta webService para buscar o Cep do Usuário
+     *
      * @param cep
      * @return
-     * @throws IOException 
+     * @throws IOException
      */
-     public Endereco buscarCep(String cep) throws IOException 
-    {
-        String json;        
+    public Endereco buscarCep(String cep) throws IOException {
+        String json;
 
-        
-            Endereco endereco = new Endereco();
-            URL url = new URL("http://viacep.com.br/ws/"+ cep +"/json");
-            URLConnection urlConnection = url.openConnection();
-            InputStream is = urlConnection.getInputStream();
-            BufferedReader br = new BufferedReader(new InputStreamReader(is));
+        Endereco endereco = new Endereco();
+        URL url = new URL("http://viacep.com.br/ws/" + cep + "/json");
+        URLConnection urlConnection = url.openConnection();
+        InputStream is = urlConnection.getInputStream();
+        BufferedReader br = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
 
-            StringBuilder jsonSb = new StringBuilder();
+        StringBuilder jsonSb = new StringBuilder();
+        
+        br.lines().forEach(l -> jsonSb.append(l.trim()));
+        json = jsonSb.toString();
 
-            br.lines().forEach(l -> jsonSb.append(l.trim()));
-            json = jsonSb.toString();
-            
-            json = json.replaceAll("[{},:]", "");
-            json = json.replaceAll("\"", "\n");                       
-            String array[] = new String[30];
-            array = json.split("\n");
-            
-            endereco.setCep(cep);
-            endereco.setLogradouro(array[7]);
-            endereco.setBairro(array[15]);
-            endereco.setCidade(array[19]);
-            endereco.setEstado(array[23]);
-            
-            return endereco;
-        
-        
+        json = json.replaceAll("[{},:]", "");
+        json = json.replaceAll("\"", "\n");
+        String array[] = json.split("\n");
+
+        endereco.setCep(cep);
+        endereco.setLogradouro(array[7]);
+        endereco.setBairro(array[15]);
+        endereco.setCidade(array[19]);
+        endereco.setEstado(array[23]);
+
+        return endereco;
+
     }
-    
+
+   
+
 }

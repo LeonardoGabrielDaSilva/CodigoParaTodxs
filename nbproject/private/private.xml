@@ -3,15 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Leonardo%20Gabriel/Documents/NetBeansProjects/PropostaDeCredito/src/br/com/proway/model/Pessoa.java</file>
-            <file>file:/C:/Users/Leonardo%20Gabriel/Documents/NetBeansProjects/PropostaDeCredito/src/br/com/proway/model/Contrato.java</file>
-            <file>file:/C:/Users/Leonardo%20Gabriel/Documents/NetBeansProjects/PropostaDeCredito/src/br/com/proway/views/ViewEntrada.java</file>
             <file>file:/C:/Users/Leonardo%20Gabriel/Documents/NetBeansProjects/PropostaDeCredito/src/br/com/proway/util/ConsultasUtil.java</file>
-            <file>file:/C:/Users/Leonardo%20Gabriel/Documents/NetBeansProjects/PropostaDeCredito/src/br/com/proway/views/ViewEndereco.java</file>
             <file>file:/C:/Users/Leonardo%20Gabriel/Documents/NetBeansProjects/PropostaDeCredito/src/br/com/proway/persistencia/ImportarExportar.java</file>
+            <file>file:/C:/Users/Leonardo%20Gabriel/Documents/NetBeansProjects/PropostaDeCredito/src/br/com/proway/views/ViewEndereco.java</file>
             <file>file:/C:/Users/Leonardo%20Gabriel/Documents/NetBeansProjects/PropostaDeCredito/src/br/com/proway/views/ViewEmprestimo.java</file>
-            <file>file:/C:/Users/Leonardo%20Gabriel/Documents/NetBeansProjects/PropostaDeCredito/src/br/com/proway/util/CalculosUtil.java</file>
-            <file>file:/C:/Users/Leonardo%20Gabriel/Documents/NetBeansProjects/PropostaDeCredito/src/br/com/proway/views/ViewContratos.java</file>
+            <file>file:/C:/Users/Leonardo%20Gabriel/Documents/NetBeansProjects/PropostaDeCredito/src/br/com/proway/views/ViewFormulario.java</file>
+            <file>file:/C:/Users/Leonardo%20Gabriel/Documents/NetBeansProjects/PropostaDeCredito/src/br/com/proway/views/ViewRevisao.java</file>
         </group>
     </open-files>
 </project-private>
