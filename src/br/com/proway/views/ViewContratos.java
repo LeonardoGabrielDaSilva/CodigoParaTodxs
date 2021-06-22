@@ -312,7 +312,7 @@ public class ViewContratos extends javax.swing.JFrame {
         contrato.setParcelas(parcelas);
         areaContrato0.append("Valor de Empréstimo: R$" + contrato.getValor());
         areaContrato0.append("\nQuantidade de parcelas: " + contrato.getParcelas());
-        areaContrato0.append("\nValor das parcelas: R$" + contrato.calculaJurosPorParcela());
+        areaContrato0.append("\nValor das parcelas: R$" + contrato.calculaValorParcelaComJuros());
         areaContrato0.append("\nValor de juros mensal: " + contrato.getPorcentagemJuros() + "%");
         lista.add(contrato);
 
@@ -321,7 +321,7 @@ public class ViewContratos extends javax.swing.JFrame {
         contrato.setParcelas(parcelas + 6);
         areaContrato1.append("Valor de Empréstimo: R$" + contrato.getValor());
         areaContrato1.append("\nQuantidade de parcelas: " + contrato.getParcelas());
-        areaContrato1.append("\nValor das parcelas: R$" + contrato.calculaJurosPorParcela());
+        areaContrato1.append("\nValor das parcelas: R$" + contrato.calculaValorParcelaComJuros());
         areaContrato1.append("\nValor de juros mensal: " + contrato.getPorcentagemJuros() + "%");
         lista.add(contrato);
 
@@ -330,7 +330,7 @@ public class ViewContratos extends javax.swing.JFrame {
         contrato.setParcelas(parcelas + 6);
         areaContrato2.append("Valor de Empréstimo: R$" + contrato.getValor());
         areaContrato2.append("\nQuantidade de parcelas: " + contrato.getParcelas());
-        areaContrato2.append("\nValor das parcelas: R$" + contrato.calculaJurosPorParcela());
+        areaContrato2.append("\nValor das parcelas: R$" + contrato.calculaValorParcelaComJuros());
         areaContrato2.append("\nValor de juros mensal: " + contrato.getPorcentagemJuros() + "%");
         lista.add(contrato);
 
@@ -339,7 +339,7 @@ public class ViewContratos extends javax.swing.JFrame {
         contrato.setParcelas(parcelas + 12);
         areaContrato3.append("Valor de Empréstimo: R$" + contrato.getValor());
         areaContrato3.append("\nQuantidade de parcelas: " + contrato.getParcelas());
-        areaContrato3.append("\nValor das parcelas: R$" + contrato.calculaJurosPorParcela());
+        areaContrato3.append("\nValor das parcelas: R$" + contrato.calculaValorParcelaComJuros());
         areaContrato3.append("\nValor de juros mensal: " + contrato.getPorcentagemJuros() + "%");
         lista.add(contrato);
 
@@ -348,7 +348,7 @@ public class ViewContratos extends javax.swing.JFrame {
         contrato.setParcelas(parcelas + 6);
         areaContrato4.append("Valor de Empréstimo: R$" + contrato.getValor());
         areaContrato4.append("\nQuantidade de parcelas: " + contrato.getParcelas());
-        areaContrato4.append("\nValor das parcelas: R$" + contrato.calculaJurosPorParcela());
+        areaContrato4.append("\nValor das parcelas: R$" + contrato.calculaValorParcelaComJuros());
         areaContrato4.append("\nValor de juros mensal: " + contrato.getPorcentagemJuros() + "%");
         lista.add(contrato);
 
@@ -357,7 +357,7 @@ public class ViewContratos extends javax.swing.JFrame {
         contrato.setParcelas(parcelas + 12);
         areaContrato5.append("Valor de Empréstimo: R$" + contrato.getValor());
         areaContrato5.append("\nQuantidade de parcelas: " + contrato.getParcelas());
-        areaContrato5.append("\nValor das parcelas: R$" + contrato.calculaJurosPorParcela());
+        areaContrato5.append("\nValor das parcelas: R$" + contrato.calculaValorParcelaComJuros());
         areaContrato5.append("\nValor de juros mensal: " + contrato.getPorcentagemJuros() + "%");
         lista.add(contrato);
 
