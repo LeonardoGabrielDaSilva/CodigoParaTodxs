@@ -35,6 +35,14 @@ public class Contrato {
         return JUROS;
     }
     
+    public float calculaValorParcelaSemJuros(){
+        return (float) valor / parcelas;
+    }
+    
+    public float calculaValorParcelaComJuros(){
+        return (float) calculaJurosPorParcela() + calculaValorParcelaSemJuros();
+    }
+    
     public float calculaJurosPorParcela(){
         return (float) valor * JUROS;
     }

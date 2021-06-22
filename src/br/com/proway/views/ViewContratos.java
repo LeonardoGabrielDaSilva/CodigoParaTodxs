@@ -172,7 +172,7 @@ public class ViewContratos extends javax.swing.JFrame {
     private void areaContrato0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_areaContrato0MouseClicked
         if (JOptionPane.showConfirmDialog(null, "Valor do Empréstimo: R$" + lista.get(0).getValor()
                 + "\nQuantidade de Parcelas: " + lista.get(0).getParcelas()
-                + "\nValor das Parcelas: " + lista.get(0).calculaJurosPorParcela()
+                + "\nValor das Parcelas: " + lista.get(0).calculaValorParcelaComJuros()
                 + "\n\n Deseja confirmar este contrato?", "Confirmação de Contrato", JOptionPane.YES_NO_OPTION) == 0) {
             pessoa.setContrato(lista.get(0));
             criaTelaFilha(pessoa);
@@ -182,7 +182,7 @@ public class ViewContratos extends javax.swing.JFrame {
     private void areaContrato1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_areaContrato1MouseClicked
         if (JOptionPane.showConfirmDialog(null, "Valor do Empréstimo: R$" + lista.get(1).getValor()
                 + "\nQuantidade de Parcelas: " + lista.get(1).getParcelas()
-                + "\nValor das Parcelas: " + lista.get(1).calculaJurosPorParcela()
+                + "\nValor das Parcelas: " + lista.get(1).calculaValorParcelaComJuros()
                 + "\n\n Deseja confirmar este contrato?", "Confirmação de Contrato", JOptionPane.YES_NO_OPTION) == 0) {
             pessoa.setContrato(lista.get(1));
             criaTelaFilha(pessoa);
@@ -193,7 +193,7 @@ public class ViewContratos extends javax.swing.JFrame {
 
         if (JOptionPane.showConfirmDialog(null, "Valor do Empréstimo: R$" + lista.get(2).getValor()
                 + "\nQuantidade de Parcelas: " + lista.get(2).getParcelas()
-                + "\nValor das Parcelas: " + lista.get(2).calculaJurosPorParcela()
+                + "\nValor das Parcelas: " + lista.get(2).calculaValorParcelaComJuros()
                 + "\n\n Deseja confirmar este contrato?", "Confirmação de Contrato", JOptionPane.YES_NO_OPTION) == 0) {
             pessoa.setContrato(lista.get(2));
             criaTelaFilha(pessoa);
@@ -204,7 +204,7 @@ public class ViewContratos extends javax.swing.JFrame {
     private void areaContrato3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_areaContrato3MouseClicked
         if (JOptionPane.showConfirmDialog(null, "Valor do Empréstimo: R$" + lista.get(3).getValor()
                 + "\nQuantidade de Parcelas: " + lista.get(3).getParcelas()
-                + "\nValor das Parcelas: " + lista.get(3).calculaJurosPorParcela()
+                + "\nValor das Parcelas: " + lista.get(3).calculaValorParcelaComJuros()
                 + "\n\n Deseja confirmar este contrato?", "Confirmação de Contrato", JOptionPane.YES_NO_OPTION) == 0) {
             pessoa.setContrato(lista.get(3));
             criaTelaFilha(pessoa);
@@ -214,7 +214,7 @@ public class ViewContratos extends javax.swing.JFrame {
     private void areaContrato4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_areaContrato4MouseClicked
         if (JOptionPane.showConfirmDialog(null, "Valor do Empréstimo: R$" + lista.get(4).getValor()
                 + "\nQuantidade de Parcelas: " + lista.get(4).getParcelas()
-                + "\nValor das Parcelas: " + lista.get(4).calculaJurosPorParcela()
+                + "\nValor das Parcelas: " + lista.get(4).calculaValorParcelaComJuros()
                 + "\n\n Deseja confirmar este contrato?", "Confirmação de Contrato", JOptionPane.YES_NO_OPTION) == 0) {
             pessoa.setContrato(lista.get(4));
             criaTelaFilha(pessoa);
@@ -224,7 +224,7 @@ public class ViewContratos extends javax.swing.JFrame {
     private void areaContrato5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_areaContrato5MouseClicked
         if (JOptionPane.showConfirmDialog(null, "Valor do Empréstimo: R$" + lista.get(5).getValor()
                 + "\nQuantidade de Parcelas: " + lista.get(5).getParcelas()
-                + "\nValor das Parcelas: " + lista.get(5).calculaJurosPorParcela()
+                + "\nValor das Parcelas: " + lista.get(5).calculaValorParcelaComJuros()
                 + "\n\n Deseja confirmar este contrato?", "Confirmação de Contrato", JOptionPane.YES_NO_OPTION) == 0) {
             pessoa.setContrato(lista.get(5));
             criaTelaFilha(pessoa);

@@ -513,7 +513,7 @@ public class ViewRevisao extends javax.swing.JFrame {
 
         areaContrato.append("Valor de Empréstimo: R$" + contrato.getValor());
         areaContrato.append("\nQuantidade de parcelas: " + contrato.getParcelas());
-        areaContrato.append("\nValor das parcelas: R$" + contrato.calculaJurosPorParcela());
+        areaContrato.append("\nValor das parcelas: R$" + contrato.calculaValorParcelaComJuros());
         areaContrato.append("\nValor de juros mensal: " + contrato.getPorcentagemJuros() + "%");
 
     }
