@@ -10,7 +10,7 @@ package br.com.proway.model;
  * @author Leonardo Gabriel
  */
 public class Contrato {
-    
+
     private final float JUROS = 0.035f;
     private float valor;
     private int parcelas;
@@ -34,30 +34,29 @@ public class Contrato {
     public float getJuros() {
         return JUROS;
     }
-    
-    public float calculaValorParcelaSemJuros(){
-        return (float) valor / parcelas;
+
+    public float calculaValorParcelaSemJuros() {
+        return (float) Math.round((valor / parcelas)*100)/100;
     }
-    
-    public float calculaValorParcelaComJuros(){
-        return (float) calculaJurosPorParcela() + calculaValorParcelaSemJuros();
+
+    public float calculaValorParcelaComJuros() {
+        return (float) Math.round((calculaJurosPorParcela() + calculaValorParcelaSemJuros())*100)/100;
     }
-    
-    public float calculaJurosPorParcela(){
-        return (float) valor * JUROS;
+
+    public float calculaJurosPorParcela() {
+        return (float) Math.round((valor * JUROS)*100)/100;
     }
-    
-    public float calculaJurosTotal(){
-        return (float) calculaJurosPorParcela() * parcelas;
+
+    public float calculaJurosTotal() {
+        return (float) Math.round((calculaJurosPorParcela() * parcelas)*100)/100;
     }
-    
-    public float getPorcentagemJuros(){
-        return JUROS*100;
+
+    public float getPorcentagemJuros() {
+        return JUROS * 100;
     }
-    
-    public float calculaTotalDivida(){
-        return calculaJurosTotal() + valor;
+
+    public float calculaTotalDivida() {
+        return (float) Math.round((calculaJurosTotal() + valor)*100)/100;
     }
-    
-    
+
 }
