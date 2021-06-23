@@ -19,7 +19,7 @@ O sistema foi desenvolvido inteiramente em Java, utilizando a interface visual J
 
 ### Pré-requisitos
 
-Para a execução do projeto, não será necessário nenhum pré-requisito. O programa pode ser acessado pelo caminho CodigoParaTodxs/dist/PropostaDeCredito.jar
+Para a execução do projeto, será necessário da pasta lib no mesmo local do arquivo ".jar" devido às dependencias da biblioteca para uso do JSON em persistência. O executável pode ser encontrado dentro da pasta "dist" no caminho CodigoParaTodxs/dist/PropostaDeCredito.jar.
 Como a persistência é feita em JSON, também não será necessária nenhuma utilização de SGBD.
 Já para acessar o código, o recomendável é a utilização da IDE NetBeans 8.2. Visto que a mesma proporciona uma melhor visão dos JFrames.
 
