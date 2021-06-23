@@ -6,10 +6,13 @@
 package br.com.proway.util;
 
 import br.com.proway.model.Endereco;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Type;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.Charset;
@@ -29,33 +32,11 @@ public class ConsultasUtil {
      * @throws IOException
      */
     public Endereco buscarCep(String cep) throws IOException {
-        String json;
-
-        Endereco endereco = new Endereco();
+        Type listType = new TypeToken<Endereco>() {}.getType();
         URL url = new URL("http://viacep.com.br/ws/" + cep + "/json");
         URLConnection urlConnection = url.openConnection();
         InputStream is = urlConnection.getInputStream();
         BufferedReader br = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
-
-        StringBuilder jsonSb = new StringBuilder();
-        
-        br.lines().forEach(l -> jsonSb.append(l.trim()));
-        json = jsonSb.toString();
-
-        json = json.replaceAll("[{},:]", "");
-        json = json.replaceAll("\"", "\n");
-        String array[] = json.split("\n");
-
-        endereco.setCep(cep);
-        endereco.setLogradouro(array[7]);
-        endereco.setBairro(array[15]);
-        endereco.setCidade(array[19]);
-        endereco.setEstado(array[23]);
-
-        return endereco;
-
+        return new Gson().fromJson(br, listType);
     }
-
-   
-
 }
