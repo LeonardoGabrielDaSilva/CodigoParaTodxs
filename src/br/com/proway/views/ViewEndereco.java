@@ -301,10 +301,10 @@ public class ViewEndereco extends javax.swing.JFrame {
     private void PopulaPessoa() {
         Endereco endereco = new Endereco();
         endereco.setCep(txtCep.getText());
-        endereco.setCidade(txtCidade.getText());
+        endereco.setLocalidade(txtCidade.getText());
         endereco.setBairro(txtBairro.getText());
         endereco.setLogradouro(txtLogradouro.getText());
-        endereco.setEstado(boxEstado.getSelectedItem().toString());
+        endereco.setUf(boxEstado.getSelectedItem().toString());
         endereco.setNumeroCasa(Integer.parseInt(txtNumeroCasa.getText()));
         pessoa.setEndereco(endereco);
     }
@@ -318,10 +318,10 @@ public class ViewEndereco extends javax.swing.JFrame {
         try {
             endereco = consulta.buscarCep(txtCep.getText());
             if (endereco != null) {
-                txtCidade.setText(endereco.getCidade());
+                txtCidade.setText(endereco.getLocalidade());
                 txtBairro.setText(endereco.getBairro());
                 txtLogradouro.setText(endereco.getLogradouro());
-                boxEstado.setSelectedItem(endereco.getEstado());
+                boxEstado.setSelectedItem(endereco.getUf());
             }
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(null, "CEP Inválido");

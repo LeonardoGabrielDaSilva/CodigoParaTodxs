@@ -503,9 +503,9 @@ public class ViewRevisao extends javax.swing.JFrame {
         Endereco endereco = pessoa.getEndereco();
 
         txtCep.setText(endereco.getCep());
-        txtCidade.setText(endereco.getCidade());
+        txtCidade.setText(endereco.getLocalidade());
         txtBairro.setText(endereco.getBairro());
-        txtEstado.setText(endereco.getEstado());
+        txtEstado.setText(endereco.getUf());
         txtLogradouro.setText(endereco.getLogradouro());
         txtNumero.setText(Integer.toString(endereco.getNumeroCasa()));
 
